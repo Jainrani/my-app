@@ -10,9 +10,11 @@ import Carousel from './Components/carousel/carousel';
 
 
 
+
+
 export default function App() {
   return <div>
-     { /*Header/*/ }
+      <Header/>
       <Navbar/>
       <Categories/>
       <Carousel/>
