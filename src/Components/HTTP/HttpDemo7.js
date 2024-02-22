@@ -1,31 +1,43 @@
 import React, { useState } from 'react'
 import { useEffect } from 'react';
 import UserCard from '../listItem/UserCard';
-import axios from 'axios';
+import client from './client';
 
-export default function HttpDemo5() {
+export default function HttpDemo7() {
     const [users, setUsers] = useState([]);
     const [isLoading, setIsLoading] = useState(false);
 
     const fetchUsers = async () => {
-        let url = 'https://jsonplaceholder.typicode.com/users';
-        let response = await axios.get(url);
-        console.log(response);
+        let response = await client.get('/users');
         setUsers(response.data);
         setIsLoading(false);
+        console.log(users)
+    }
+    const fetchComments = async () => {
+        let response = await client.get('/comments');
+        console.log(response.data)
+    }
+    const fetchPhotoes = async () => {
+        let response = await client.get('/photos');
+        console.log(response.data)
     }
 
     useEffect(() => {
         setIsLoading(true);
         fetchUsers();
+        fetchComments();
+        fetchPhotoes();
     }, []);
     return <>
-        <h2 className='text-center'>Fetch Users data - HTTP Demo3 </h2>
+        <h2 className='text-center'>Fetch Users data - HTTP Demo4 </h2>
         <div className='container'>
             <div className='row'>
                 {
                     isLoading ?
-                        <h2>Loading...</h2>
+                        // <h2>Loading...</h2>
+                        <div class="spinner-border text-center" role="status">
+                            <span class="visually-hidden">Loading...</span>
+                        </div>
                         :
 
                         users.map(user => {

@@ -50,6 +50,8 @@ import ThemeDemo from '../state/ThemeDemo';
 import HttpDemo3 from '../HTTP/HttpDemo3';
 import HttpDemo5 from '../HTTP/HttpDemo5';
 import HttpDemo6 from '../HTTP/HttpDemo6';
+import HttpDemo7 from '../HTTP/HttpDemo7';
+import HttpDemo8 from '../HTTP/HttpDemo8';
 
 
 
@@ -113,7 +115,9 @@ export default function main() {
  {/* <HttpDemo3/> */}
  {/* <HttpDemo4/> */}
  {/* <HttpDemo5/> */}
- <HttpDemo6/>
+ {/* <HttpDemo6/> */}
+ {/* <HttpDemo7/> */}
+ {/* <HttpDemo8/> */}
 
 
 </div>
