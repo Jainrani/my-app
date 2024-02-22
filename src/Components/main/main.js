@@ -21,6 +21,27 @@ import ToggleDemo2 from '../state/ToggleDemo2';
 //import PasswordDemo1 from '../state/PasswordDemo1';
 import SumTwoNumbers from '../state/SumDemo';
 import RemainingCharacter from '../state/RemainingCharacter';
+import ToDoCRUD from '../ToDoCRUD/ToDoCRUD';
+import Folder from '../FolderExplorer/Folder';
+import folderData from '../FolderExplorer/folderData.json'
+import EventDemo1 from '../Event/EventDemo1';
+import EventDemo2 from '../Event/EventDemo2';
+import EventDemo3 from '../Event/EventDemo3';
+import EventDemo4 from '../Event/EventDemo4';
+import EventDemo5 from '../Event/EventDemo5';
+import LifeCycleDemo1 from '../LifeCycle/LifeCycleDemo1';
+import LifeCycleDemo3 from '../LifeCycle/LifeCycleDemo3';
+import LifeCycleDemo4 from '../LifeCycle/LifeCycleDemo4';
+import LifeCycleDemo2 from '../LifeCycle/LifeCycleDemo2';
+import EmployeeCrud from '../EmployeeCRUD/EmployeeCrud';
+import SweetAlertDemo from '../demo/SweetAlertDemo';
+import MemoParent from '../memo/MemoParent';
+import StateDropDown from '../state/StateDropDown';
+import FormDemo1 from '../Form/FormDemo1';
+import FormDemo2 from '../Form/FormDemo2';
+import FormDemo3 from '../Form/FormDemo3';
+import RefDemo1 from '../Form/RefDemo1';
+import RefDemo2 from '../Form/RefDemo2';
 
 
 
@@ -53,8 +74,31 @@ export default function main() {
 {/*<ToggleDemo1/>*/}
 {/*<ToggleDemo2/>*/}
 {/*<PasswordDemo1/>*/}
-<SumTwoNumbers/>
+{/* <SumTwoNumbers/>
 <RemainingCharacter/>
+<ToDoCRUD />
+<Folder folderInfo={folderData} />
+<EventDemo1/>
+<EventDemo2/>
+<EventDemo3/>
+<EventDemo4/>
+<EventDemo5/>
+<LifeCycleDemo1/>
+<LifeCycleDemo3/>
+<LifeCycleDemo4/>
+<LifeCycleDemo2/>
+<EmployeeCrud/>
+<ReactModal/>
+<SweetAlertDemo/>
+<MemoParent/>
+<StateDropDown/>
+<FormDemo1/>
+<FormDemo2/>
+<FormDemo3/>
+<RefDemo1/>
+<RefDemo2/>
+ */}
+
 
 
 </div>
