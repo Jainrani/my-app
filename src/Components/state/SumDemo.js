@@ -1,30 +1,44 @@
 
 import React, { useState } from 'react'
 
+export default function SumDemo() {
+  const [num1, setNum1] = useState()
+  const [num2, setNum2] = useState()
+  const [result, setResult] = useState()
 
-export default function TwoNumbers() {
-    const [num1, setNum1] = useState(0);
-    const [num2, setNum2] = useState(0);
-    const [sum, setSum] = useState(0);
-    const[division,setDivision] =useState(0);
+  const handleNum1Change = (event) => {
+    setNum1(Number(event.target.value));
+  };
+
+  const handleNum2Change = (event) => {
+    setNum2(Number(event.target.value));
+  };
+
+  const handleAddition = () => {
+    setResult(num1 + num2);
+  };
+
+  return (
+    <div className="container">
+      <h3 className="title"> Add Two Numbers</h3>
+      <input
+        type="number"
+        className="input"
+        value={num1}
+        onChange={handleNum1Change}
+      />
+      <input
+        type="number"
+        className="input"
+        value={num2}
+        onChange={handleNum2Change}
+      />
+      <button className="button" onClick={handleAddition}>
+        Add
+      </button>
+      <p className="result">Result: {result}</p>
+    </div>
+  );
   
-    const AddTotal= () => {
-      setSum(num1 + num2);
-      const AddTotal= () => {
-        setDivision(num1 - num2);
-    }
-  
-    return (
-      <div style={{textAlign:'center'}}>
-        <input type="number" value={num1} onChange={(e) =>setNum1(Number(e.target.value))} />
-        <input type="number" value={num2} onChange={(e) =>setNum2(Number(e.target.value))} />
-<div style={{textAlign:'center'}}>
-        <button onClick={AddTotal}>Add</button>
-        <button onClick={AddTotal}>division</button>
-        </div>
-        <p>Result:{sum}</p>
-        
-      </div>
-    );
-    }
 }
+

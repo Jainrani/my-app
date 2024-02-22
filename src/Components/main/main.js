@@ -18,8 +18,8 @@ import UserList from '../listItem/UserList';
 import StateDemo1 from '../state/StateDemo1';
 import ToggleDemo1 from '../state/ToggleDemo1';
 import ToggleDemo2 from '../state/ToggleDemo2';
-//import PasswordDemo1 from '../state/PasswordDemo1';
-import SumTwoNumbers from '../state/SumDemo';
+import PasswordDemo1 from '../state/PasswordDemo1';
+import SumDemo from '../state/SumDemo';
 import RemainingCharacter from '../state/RemainingCharacter';
 import ToDoCRUD from '../ToDoCRUD/ToDoCRUD';
 import Folder from '../FolderExplorer/Folder';
@@ -34,7 +34,7 @@ import LifeCycleDemo3 from '../LifeCycle/LifeCycleDemo3';
 import LifeCycleDemo4 from '../LifeCycle/LifeCycleDemo4';
 import LifeCycleDemo2 from '../LifeCycle/LifeCycleDemo2';
 import EmployeeCrud from '../EmployeeCRUD/EmployeeCrud';
-import SweetAlertDemo from '../demo/SweetAlertDemo';
+//import SweetAlertDemo from '../demo/SweetAlertDemo';
 import MemoParent from '../memo/MemoParent';
 import StateDropDown from '../state/StateDropDown';
 import FormDemo1 from '../Form/FormDemo1';
@@ -42,6 +42,14 @@ import FormDemo2 from '../Form/FormDemo2';
 import FormDemo3 from '../Form/FormDemo3';
 import RefDemo1 from '../Form/RefDemo1';
 import RefDemo2 from '../Form/RefDemo2';
+import HttpDemo4 from '../HTTP/HttpDemo4';
+import ProductList from '../listItem/ProductList';
+import PureDemo1 from '../state/PureDemo1';
+import PureDemo2 from '../state/PureDemo2';
+import ThemeDemo from '../state/ThemeDemo';
+import HttpDemo3 from '../HTTP/HttpDemo3';
+import HttpDemo5 from '../HTTP/HttpDemo5';
+import HttpDemo6 from '../HTTP/HttpDemo6';
 
 
 
@@ -73,32 +81,39 @@ export default function main() {
 {/*<StateDemo1/>*/}
 {/*<ToggleDemo1/>*/}
 {/*<ToggleDemo2/>*/}
-{/*<PasswordDemo1/>*/}
-{/* <SumTwoNumbers/>
-<RemainingCharacter/>
-<ToDoCRUD />
-<Folder folderInfo={folderData} />
-<EventDemo1/>
-<EventDemo2/>
-<EventDemo3/>
-<EventDemo4/>
-<EventDemo5/>
-<LifeCycleDemo1/>
-<LifeCycleDemo3/>
-<LifeCycleDemo4/>
-<LifeCycleDemo2/>
-<EmployeeCrud/>
-<ReactModal/>
-<SweetAlertDemo/>
-<MemoParent/>
-<StateDropDown/>
-<FormDemo1/>
-<FormDemo2/>
-<FormDemo3/>
-<RefDemo1/>
-<RefDemo2/>
- */}
-
+{/* <PasswordDemo1/> */}
+ {/* <SumDemo/> */}
+{/* <RemainingCharacter/> */}
+{/* <ToDoCRUD /> */}
+{/* <Folder folderInfo={folderData} /> */}
+{/* <EventDemo1/> */}
+{/* <EventDemo2/> */}
+{/* <EventDemo3/> */}
+{/* <EventDemo4/> */}
+{/* <EventDemo5/> */}
+{/* <LifeCycleDemo1/> */}
+{/* <LifeCycleDemo3/> */}
+{/* <LifeCycleDemo4/> */}
+{/* <LifeCycleDemo2/> */}
+{/* <EmployeeCrud/> */}
+{/* <ReactModal/> */}
+{/* <SweetAlertDemo/> */}
+{/* <MemoParent/> */}
+{/* <FormDemo1/> */}
+{/* <FormDemo2/> */}
+{/* <FormDemo3/> */}
+{/* <RefDemo1/> */}
+{/* <RefDemo2/> */}
+ {/* <PureDemo1/> */}
+ {/* <PureDemo2/> */}
+ {/* <HttpDemo4/> */}
+ {/* <ProductList/> */}
+ {/* <StateDropDown/> */}
+ {/* <ThemeDemo/> */}
+ {/* <HttpDemo3/> */}
+ {/* <HttpDemo4/> */}
+ {/* <HttpDemo5/> */}
+ <HttpDemo6/>
 
 
 </div>
