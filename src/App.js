@@ -12,14 +12,17 @@ import Carousel from './Components/carousel/carousel';
 
 
 
+
 export default function App() {
   return <div>
       <Header/>
       <Navbar/>
-      <Categories/>
+      {/* <Categories/> */}
       {/* <Carousel/> */}
       <Main/>
-      <Footer/>
+    
+      {/* <Footer/> */}
+      
        </div>
   
 }

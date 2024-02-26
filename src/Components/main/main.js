@@ -52,6 +52,8 @@ import HttpDemo5 from '../HTTP/HttpDemo5';
 import HttpDemo6 from '../HTTP/HttpDemo6';
 import HttpDemo7 from '../HTTP/HttpDemo7';
 import HttpDemo8 from '../HTTP/HttpDemo8';
+import SnakeGame from '../snakegame';
+
 
 
 
@@ -118,6 +120,10 @@ export default function main() {
  {/* <HttpDemo6/> */}
  {/* <HttpDemo7/> */}
  {/* <HttpDemo8/> */}
+ {/* <div className="App" style={{ width: '100vw', height: '100vh', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+      <SnakeGame />
+    </div> */}
+ 
 
 
 </div>
