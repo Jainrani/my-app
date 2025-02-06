@@ -1,0 +1,236 @@
+/* Home.css */
+
+/* General container */
+/* Home.css */  
+
+/* General container styles */  
+.home-container {  
+  padding: 20px;  
+  text-align: center;  
+  background-color: #f9f9f9;  
+  font-family: Arial, sans-serif;  
+}  
+
+.categories-container {
+  padding: 20px;
+  text-align: center;
+  margin-bottom: 30px;
+
+}
+
+.categories {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 20px;
+  
+
+}
+
+.category-card {
+  width: 200px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.category-img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 50%; /* This makes the image circular */
+  margin: 0 auto;
+}
+
+.category-name {
+  margin-top: 10px;
+  font-size: 1.2rem;
+  color: #333;
+}
+
+
+
+
+/* Container for the Button to Go to Products Page */
+.center-btn-container {  
+  margin-top: 20px;  
+  display: flex;  
+  justify-content: center;  /* Center the button */
+}
+
+.center-btn-container a {
+  padding: 10px 20px;
+  background-color: #007BFF;
+  color: white;
+  font-size: 16px;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.center-btn-container a:hover {
+  background-color: #0056b3;
+}
+.bulk-seeds-section {
+  background-color: #366488; /* Dark background for contrast */
+  padding: 40px 0; /* Spacing around the section */
+  color: white;
+   /* Default text color */
+}
+
+.bulk-seeds-section p {
+  color:white; /* Ensure the paragraph text is white */
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 20px; /* Spacing between paragraph and next elements */
+}
+
+.get-in-touch {
+  position: fixed;
+  margin-top: 20px;
+}
+
+.get-in-touch-link {
+  color: #ffdd57; /* Highlighted color for the link */
+  font-size: 1.2rem;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.get-in-touch-link:hover {
+  color: #ffd700; /* Change color on hover */
+}
+
+.btn-warning {
+  background-color: #ffdd57;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.btn-warning:hover {
+  background-color: #ffd700;
+}
+
+/* Optional: Make the entire section content centered vertically and horizontally */
+.text-center {
+  text-align: center;
+}
+
+/* Optional: Styling for underline */
+.underline {
+  width: 50px;
+  height: 3px;
+  background-color: #ffdd57;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+
+/* About Section */  
+.section {  
+  margin: 40px 0;  
+  background-color: #366488;
+}  
+
+.main-heading {  
+  font-size: 2rem;  
+  margin-bottom: 10px;  
+  color: white;
+}  
+.about-section p{
+  color: white;
+}
+.underline {  
+  width: 100px;  
+  height: 4px;  
+  background: #f39c12;  
+  margin: 0 auto 10px auto;  
+}  
+
+/* Home.css */  
+
+/* Chairman's Message Card Styles */  
+.chief-container {  
+  display: flex;  
+  flex-direction: column;  
+  align-items: center;  
+  margin: 40px 0;  
+}  
+
+.chairman-card {  
+  display: flex;  
+  align-items: flex-start; /* Align items to the start */  
+  background: #366488;  
+  border-radius: 10px;  
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);  
+  margin-bottom: 20px;  
+  overflow: hidden; /* Ensures that image and text are contained */  
+  width: 60%; /* Adjust width as needed */  
+}  
+
+.chairman-image {  
+  width: 220px; /* Set fixed width for images */  
+  height: 220px;  
+}  
+
+.message-container {  
+  padding: 20px;  
+  flex: 1; 
+  color: white;
+  /* Allow the message container to take the remaining space */  
+}  
+
+.read-more-button {  
+  background-color: #f39c12;  
+  border: none;  
+  color: black;  
+  padding: 10px 15px;  
+  border-radius: 5px;  
+  cursor: pointer;  
+  transition: background-color 0.3s;  
+  margin-top: 10px; /* Space above the button */  
+}  
+
+.read-more-button:hover {  
+  background-color: #e67e22;  
+}  
+
+/* Responsive Design for Chairman Cards */  
+@media (max-width: 768px) {  
+  .chief-container {  
+      flex-direction: column; /* Stack cards vertically on small screens */  
+  }  
+
+  .chairman-card {  
+      flex-direction: column; /* Card becomes vertical */  
+      align-items: center; /* Center items within the card */  
+      width: 60%; /* Adjust width for small screens */  
+  }  
+
+  .chairman-image {  
+      width: 220px; /* Images become responsive */  
+      height: 220px; /* Maintain aspect ratio */  
+  }  
+}
+/* Review Section */  
+.review-section {  
+  margin: 40px 0;  
+}  
+
+/* Responsive Design */  
+@media (max-width: 768px) {  
+  .circular-products-grid {  
+      flex-direction: column;  
+      align-items: center;  
+  }  
+
+  .circular-product-card {  
+      width: 80%;  
+  }  
+
+  .message-container {  
+      width: 90%;  
+  }  
+}

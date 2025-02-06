@@ -1,38 +1,26 @@
-.App {
-  text-align: center;
+/* .section{
+  padding-top:40px ;
+  padding-bottom: 40px;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.main-heading{
+  color: green;
+  font-size: 26px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.underline{
+  height: 04px;
+  width: 4rem;
+  background-color: green;
+  margin-top: 10px;
+  margin-bottom:10px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.bg-C-light{
+  background-color: #f2f2f2;
+} */
+ /* Apply Background Color to Entire Website */
+body {
+  background-color: #87e78c; /* Change this color as needed */
+  color: #333; /* Default text color */
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
 }

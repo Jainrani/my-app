@@ -1,34 +1,141 @@
-import React from 'react'
+import React, { useState } from "react";
+import { Link, useNavigate } from "react-router-dom";
+import { FaBars, FaTimes, FaUser } from "react-icons/fa";
+import "./Navbar.css"; // Ensure you have CSS for styling
+import { useCart } from "../CartContext"; // Import useCart hook
+import Products from "../Products.json"; // Import product data
 
-export default function Navbar() {
-  return <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
-  <div className="container-fluid">
-    <a className="navbar-brand" href="#">Navbar</a>
-    <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span className="navbar-toggler-icon"></span>
-    </button>
-    <div className="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-        <li className="nav-item">
-          <a className="nav-link active" aria-current="page" href="#">Home</a>
-        </li>
-        <li className="nav-item">
-          <a className="nav-link" href="#">AboutUs</a>
-        </li>
-        <li className="nav-item">
-          <a className="nav-link" href="#">Careers</a>
-        </li>
-        <li className="nav-item">
-          <a className="nav-link" href="#">ContactUs</a>
-        </li>
-        
-      </ul>
-      <form className="d-flex">
-        <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
-        <button className="btn btn-outline-success" type="submit">Search</button>
-      </form>
-    </div>
-  </div>
-</nav>
-    
-}
+const Navbar = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const { cartItems } = useCart() || {}; // Use fallback in case CartContext is not available
+  const [searchQuery, setSearchQuery] = useState("");
+  const [filteredProducts, setFilteredProducts] = useState([]);
+  const navigate = useNavigate();
+
+  // Toggle Menu
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+
+  // Handle Search Input Change
+  const handleSearch = (e) => {
+    const term = e.target.value.toLowerCase();
+    setSearchQuery(term);
+
+    if (term === "") {
+      setFilteredProducts([]);
+    } else {
+      const results = Products.filter((product) =>
+        product.name.toLowerCase().includes(term)
+      );
+      setFilteredProducts(results);
+    }
+  };
+
+  // Handle Product Click (Navigate to Products Page)
+  const handleProductClick = (product) => {
+    setSearchQuery("");
+    setFilteredProducts([]);
+    navigate(`/products?search=${product.name}`);
+  };
+
+  // Clear Search Input
+  const clearSearch = () => {
+    setSearchQuery("");
+    setFilteredProducts([]);
+  };
+
+  return (
+    <nav className="navbar">
+      <div className="container-fluid">
+        {/* Logo */}
+        <Link className="navbar-brand" to="/">
+          <img src="/images/logo.jpg" alt="logo" width={100} height={100} />
+        </Link>
+
+        {/* Links */}
+        <ul className={`nav-links ${isMenuOpen ? "open" : ""}`}>
+          <li>
+            <Link to="/" onClick={() => setIsMenuOpen(false)}>
+              Home
+            </Link>
+          </li>
+          <li>
+            <Link to="/about" onClick={() => setIsMenuOpen(false)}>
+              About
+            </Link>
+          </li>
+          <li>
+            <Link to="/products" onClick={() => setIsMenuOpen(false)}>
+              Products
+            </Link>
+          </li>
+          <li>
+            <Link to="/bulk-seeds" onClick={() => setIsMenuOpen(false)}>
+              Bulk Seeds
+            </Link>
+          </li>
+          <li>
+            <Link to="/contact" onClick={() => setIsMenuOpen(false)}>
+              Contact
+            </Link>
+          </li>
+          <li>
+            <Link to="/reviews" onClick={() => setIsMenuOpen(false)}>
+              Reviews
+            </Link>
+          </li>
+        </ul>
+
+        {/* Search Bar */}
+        <div className="search-container">
+          <input
+            type="text"
+            placeholder="Search for products..."
+            value={searchQuery}
+            onChange={handleSearch}
+          />
+          {searchQuery && <button onClick={clearSearch}>❌</button>}
+        </div>
+
+        {/* Search Results Dropdown */}
+        {searchQuery && (
+          <div className="search-results">
+            {filteredProducts.length > 0 ? (
+              filteredProducts.map((product) => (
+                <div
+                  key={product.id}
+                  className="search-item"
+                  onClick={() => handleProductClick(product)}
+                >
+                  <img src={product.image} alt={product.name} width="40" />
+                  <span>{product.name}</span>
+                </div>
+              ))
+            ) : (
+              <p>No products found</p>
+            )}
+          </div>
+        )}
+
+        {/* Icons */}
+        <div className="nav-icons">
+          <Link to="/cart" className="cart-icon-link">
+            <i className="fas fa-shopping-cart"></i>
+            {cartItems.length > 0 && (
+              <span className="cart-count">{cartItems.length}</span>
+            )}
+          </Link>
+          <Link to="/login">
+            <FaUser className="login-icon" />
+          </Link>
+          <button className="menu-btn" onClick={toggleMenu}>
+            {isMenuOpen ? <FaTimes /> : <FaBars />}
+          </button>
+        </div>
+      </div>
+    </nav>
+  );
+};
+
+export default Navbar;

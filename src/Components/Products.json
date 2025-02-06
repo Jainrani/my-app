@@ -1,0 +1,89 @@
+[
+  {
+    "id": 1,
+    "img": "/images/wheat.jpg",
+    "name": "Wheat Seeds",
+    "variety":"We deal in these varieties of wheat seeds:- 2967, 303, DBW 187, 723",
+    "description": "High-quality wheat seeds suitable for all soil types, ensuring great yield and resistance to disease.Wheat seeds are a staple food packed with nutrients,including fiber,vitamins,and minerals."},
+  {
+    "id": 2,
+    "img": "/images/paddy.jpg",
+    "name": "Paddy Seeds",
+    "variety":"We deal in these varieties of wheat seeds:- Kranti, Narendra 1718, P-10, Basmati",
+    "description": "Paddy seeds, commonly used to grow rice, are an excellent source of carbohydrates and energy. Ideal for farmers looking for high-quality rice production."},
+  {
+    "id": 15,
+    "img": "/images/rice.jpg",
+    "name": "Rice Bag",
+    "description": "Rich rice in better fragrance and good taste.Good rice is rich in essential nutrients, offering a healthy balance of carbohydrates, vitamins, and minerals to fuel your body and mind.High-quality rice offers a naturally delicious flavorHeavily polished white rice loses its nutrients."}, {
+    "id": 3,
+    "img": "/images/moong.jpg",
+    "name": "Moong Seeds",
+    "description": "Rich in nutrients, our premium moong seeds ensure healthy,high-yielding crops.produce protein-rich packed with essential vitamins and minerals.Rich in protein & fiber, aiding digestion and weight management.  " },
+  {
+    "id": 4,
+    "img": "/images/urad.jpg",
+    "name": "Urad Seeds",
+    "description": "High-yielding urad seeds for farmers focused on cultivating high-quality pulses, known for their rich taste and protein value.Packed with calcium & magnesium, supporting strong bones.Rich in proteins, making it great for muscle growth and strength."
+  },
+  {
+    "id": 5,
+    "img": "/images/bajra.jpg",
+    "name": "Bajra Seeds",
+    "description": "Durable and drought-resistant bajra seeds for growing nutritious millet crops, ideal for dryland farming.High in iron & magnesium, promoting healthy blood circulation.Low glycemic index, making it ideal for diabetics."
+  },
+  {
+    "id": 6,
+    "img": "/images/barley.jpg",
+    "name": "Barley Seeds",
+    "description": "Barley seeds that thrive in cold climates and are used for food, fodder, and brewing purposes."
+  },
+  {
+    "id": 7,
+    "img": "/images/mustard.jpg",
+    "name": "Mustard Seeds",
+    "description": "Premium mustard seeds known for their pungent flavor and used extensively in cooking, oil production, and agriculture. Mustard seeds are small, flavorful seeds widely used in cooking and seasoning. They are rich in essential oils and nutrients that benefit overall health."
+  },
+
+
+  {
+    "id": 8,
+    "img": "/images/oill.jpg",
+    "name": "Mustard Oil (1L)",
+    "description": "Pure mustard oil sourced directly from mustard seeds, ideal for cooking, massages, and other traditional uses.Mustard oil is a natural oil extracted from mustard seeds, known for its strong aroma, pungent flavor, and numerous health benefits.It supports heart health by regulating cholesterol levels." },{
+    "id": 9,
+    "img": "/images/cow1.jpg",
+    "name": "Dharamgadh Multi Grain Dana",
+    "description": "A healthy mix of grains, providing essential nutrition and a great addition to your daily meals.Multigrain dana is a wholesome and balanced feed that ensures better health, productivity, and longevity for cows.Rich in proteins, vitamins, and minerals"},
+  {
+    "id": 10,
+    "img": "/images/wheat flour.jpg",
+    "name": "Wheat Flour",
+    "description": "Freshly milled wheat flour, perfect for baking and cooking, providing high nutritional value and natural taste. Supports digestive health and prevents constipation  Provides sustained energy. Good for Heart Health Whole wheat flour contains nutrients like magnesium and potassium that help regulate blood pressure."
+  },
+  {
+    "id": 11,
+    "img": "/images/multigrain flour.jpg",
+    "name": "Multi Grain Flour",
+    "description":" Multigrain flour is a blend of various grains like wheat, barley, oats, and millet. It combines the nutritional benefits of multiple grains and is an excellent choice for health-conscious individuals.Provides a wide range of vitamins,minerals,iron and magnesium." },
+  {
+    "id": 12,
+    "img": "/images/millets flour.jpg",
+    "name": "Millets Flour",
+    "description": "Flour made from millets, a nutritious, gluten-free option for various cooking and baking needs.Millet flour is made by grinding millets such as finger millet (ragi), pearl millet (bajra), and sorghum (jowar).Low glycemic index makes it suitable for diabetics."
+  },
+  {
+    "id": 13,
+    "img": "/images/Dap.jpg",
+    "name": "DAP Fertilizer",
+    "description": "Diammonium phosphate (DAP) fertilizer, rich in nitrogen and phosphorus, ideal for boosting crop growth."
+  },
+  {
+    "id": 14,
+    "img": "/images/urea.jpg",
+    "name": "Urea Fertilizer",
+    "description": "High-quality urea fertilizer to promote plant growth and increase crop yield, suitable for a wide range of crops."
+  }
+]
+ 
+

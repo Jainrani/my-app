@@ -1,0 +1,99 @@
+/* Container for the whole cart */
+/* Cart Container */
+.cart-container {
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Cart Title */
+.cart-container h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Empty Cart Message */
+.cart-container p {
+  font-size: 1rem;
+  color: #666;
+}
+
+/* Cart Items */
+.cart-items {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* Cart Item Card */
+.cart-item-card {
+  display: flex;
+  align-items: center;
+  background: #fff;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Cart Item Image */
+.cart-item-img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 5px;
+  margin-right: 15px;
+}
+
+/* Cart Item Info */
+.cart-item-info {
+  flex-grow: 1;
+  text-align: left;
+}
+
+.cart-item-name {
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.cart-item-description {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+/* Cart Item Actions */
+.cart-item-actions {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+/* Remove Button (Trash Icon) */
+.remove-btn {
+  background: none;
+  border: none;
+  color: red;
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.remove-btn:hover {
+  color: darkred;
+}
+
+/* Buy Now Button */
+.buy-now-btn {
+  padding: 8px 15px;
+  border: none;
+  border-radius: 5px;
+  background: #28a745;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.buy-now-btn:hover {
+  background: #218838;
+}

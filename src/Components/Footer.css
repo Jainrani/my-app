@@ -1,0 +1,129 @@
+
+
+/* General Footer Styling */
+.footer {
+  background-color:lightgray;
+  color: #0f0f0f;
+  padding: 20px 0;
+  font-family: Arial, sans-serif;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.footer-left,
+.footer-middle,
+.footer-right {
+  flex: 1;
+  margin: 10px;
+  min-width: 250px;
+}
+
+/* Footer Left Section */
+.footer-left h3 {
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+.footer-info {
+  margin-top: 10px;
+}
+
+.footer-info-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.footer-info-item img.footer-icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+.footer-info-item a {
+  color: #0f1cd8;
+  text-decoration: none;
+}
+
+.footer-info-item a:hover {
+  text-decoration: underline;
+}
+
+.footer-info-item span {
+  color: #0f0f0f;
+}
+
+/* Footer Middle Section */
+.footer-middle ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.footer-middle ul li {
+  margin-bottom: 10px;
+}
+
+.footer-middle ul li a {
+  color: #080808;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.footer-middle ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Footer Right Section */
+.footer-right h4 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.social-icons {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  gap: 10px;
+}
+
+.social-icons li a {
+  color: #2b19cf;
+  text-decoration: none;
+}
+
+.social-icons li a:hover {
+  color: #0d0e0d; /* Hover color */
+}
+
+/* WhatsApp Icon Styling */
+
+/* Footer Bottom Text */
+.footer-left p {
+  margin-top: 20px;
+  font-size: 14px;
+  color: #0e0d0d;
+}
+.footer-bottom{
+  text-align: center;
+  margin-top: 20px;
+  font-size: 14px;
+  color: #0e0d0d;
+ 
+}
+/* Responsive Design */
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+ 
+}
